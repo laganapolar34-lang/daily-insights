@@ -1,96 +1,245 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Global Insights Daily - Daily Insights</title>
-    <link rel="stylesheet" href="../../../../assets/css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <title>每日国际政经深度分析 - 2026年2月8日</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+            min-height: 100vh;
+            color: #e8e8e8;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            border-bottom: 2px solid rgba(255,215,0,0.3);
+            margin-bottom: 30px;
+        }
+        h1 {
+            font-size: 2.5em;
+            color: #ffd700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+            margin-bottom: 10px;
+        }
+        .date {
+            font-size: 1.2em;
+            color: #a0a0a0;
+        }
+        .gold-price-card {
+            background: linear-gradient(145deg, #2a2a4a, #1a1a3a);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 30px 0;
+            border: 1px solid rgba(255,215,0,0.2);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        .gold-price-card h2 {
+            color: #ffd700;
+            margin-bottom: 20px;
+            font-size: 1.5em;
+        }
+        .price-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+        }
+        .price-item {
+            background: rgba(255,215,0,0.1);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .price-label {
+            font-size: 0.9em;
+            color: #a0a0a0;
+            margin-bottom: 5px;
+        }
+        .price-value {
+            font-size: 2em;
+            color: #ffd700;
+            font-weight: bold;
+        }
+        .price-change {
+            font-size: 0.9em;
+            color: #4ade80;
+            margin-top: 5px;
+        }
+        .section {
+            background: linear-gradient(145deg, #252545, #151535);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 25px 0;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .section h2 {
+            color: #60a5fa;
+            margin-bottom: 20px;
+            font-size: 1.4em;
+            border-left: 4px solid #60a5fa;
+            padding-left: 15px;
+        }
+        .news-item {
+            padding: 15px;
+            margin: 15px 0;
+            background: rgba(255,255,255,0.05);
+            border-radius: 10px;
+            border-left: 3px solid #ffd700;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .news-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+        }
+        .news-title {
+            font-size: 1.1em;
+            color: #ffffff;
+            margin-bottom: 8px;
+            font-weight: 600;
+        }
+        .news-source {
+            font-size: 0.85em;
+            color: #60a5fa;
+            margin-bottom: 8px;
+        }
+        .news-summary {
+            font-size: 0.95em;
+            color: #c0c0c0;
+            line-height: 1.6;
+        }
+        .news-link {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 15px;
+            background: rgba(96,165,250,0.2);
+            color: #60a5fa;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 0.85em;
+            transition: background 0.2s;
+        }
+        .news-link:hover {
+            background: rgba(96,165,250,0.3);
+        }
+        .footer {
+            text-align: center;
+            padding: 30px;
+            color: #707070;
+            font-size: 0.9em;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 40px;
+        }
+        .timestamp {
+            color: #ffd700;
+        }
+        @media (max-width: 600px) {
+            .price-grid {
+                grid-template-columns: 1fr;
+            }
+            h1 {
+                font-size: 1.8em;
+            }
+        }
+    </style>
 </head>
-<body class="high-density">
-    <aside id="sidebar">
-        <h2>Daily Insights</h2>
-        <nav id="sidebar-nav">
-            <!-- Populated by sidebar.js -->
-        </nav>
-        <div style="margin-top: auto; font-size: 0.8rem; color: #999;">
-            <a href="/daily-insights/index.html" style="color: inherit; text-decoration: none;">← Home</a>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌍 每日国际政经深度分析</h1>
+            <p class="date">2026年2月8日 · 星期日</p>
+        </header>
+
+        <div class="gold-price-card">
+            <h2>📊 实时金价</h2>
+            <div class="price-grid">
+                <div class="price-item">
+                    <div class="price-label">国际金价（美元/盎司）</div>
+                    <div class="price-value">$2,890</div>
+                    <div class="price-change">↑ 近期持续上涨</div>
+                </div>
+                <div class="price-item">
+                    <div class="price-label">国内金价（元/盎司）</div>
+                    <div class="price-value">¥20,500</div>
+                    <div class="price-change">汇率：1 USD ≈ 7.09 CNY</div>
+                </div>
+            </div>
         </div>
-    </aside>
 
-    <main>
-        <article>
-            <div class="report-date">2026-02-08</div>
-            <h1>Global Insights Daily</h1>
-            <section class="content">
-                
-                <div class="category-section">
-                    <h2>【科技与 AI】</h2>
-                    
-                    <div class="article-card">
-                        <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&q=80&w=1000" alt="Tech">
-                        <div class="article-body">
-                            <div class="card-blog">Yahoo Finance / WSJ</div>
-                            <h3 class="card-title"><a href="https://finance.yahoo.com/news/big-techs-ai-spending-spree-142111465.html" target="_blank">大型科技巨头的 AI 支出规模已比肩美国历史重大资本工程</a></h3>
-                            <div class="card-summary">亚马逊、谷歌、微软及 Meta 在人工智能领域的支出占 GDP 比重已达到历史性高位，其规模可与往昔的国家级重大基础建设相提并论。</div>
-                        </div>
-                    </div>
-                
-                    <div class="article-card">
-                        <div class="article-body">
-                            <div class="card-blog">CNBC / Bloomberg</div>
-                            <h3 class="card-title"><a href="https://www.cnbc.com/2026/02/06/google-microsoft-meta-amazon-ai-cash.html" target="_blank">科技界 AI 扩张热潮或引发债券市场负面连锁反应</a></h3>
-                            <div class="card-summary">企业为支持 AI 领域的庞大扩张而频繁融资，正导致信贷市场出现集中度风险。过度依赖债务驱动的增长模式可能在流动性收紧时引发波动。</div>
-                        </div>
-                    </div>
+        <div class="section">
+            <h2>🔥 核心要闻</h2>
+
+            <div class="news-item">
+                <div class="news-title">1. 伊朗威胁发动导弹袭击</div>
+                <div class="news-source">华尔街日报 · WSJ World</div>
+                <div class="news-summary">
+                    伊朗方面发出强硬信号，威胁将对美国及其盟友采取军事行动。这一举动被视为伊朗在核谈判中试图展示实力，而非示弱。中东局势持续紧张，国际油价和金价应声上涨。
                 </div>
+                <a href="https://www.wsj.com/world/middle-east/iran-threatens-missile-attacks-hoping-trump-sees-strength-not-weakness-997c6ab9" class="news-link" target="_blank">阅读原文 →</a>
+            </div>
 
-                <div class="category-section">
-                    <h2>【全球经济】</h2>
-                    
-                    <div class="article-card">
-                        <img src="https://images.unsplash.com/photo-1611974717483-5828fb73059d?auto=format&fit=crop&q=80&w=1000" alt="Economy">
-                        <div class="article-body">
-                            <div class="card-blog">Yahoo Finance / Bloomberg</div>
-                            <h3 class="card-title"><a href="https://finance.yahoo.com/news/dorsey-block-cutting-10-staff-221923601.html" target="_blank">Block 公司计划裁员 10% 以推行“效率优先”策略</a></h3>
-                            <div class="card-summary">由杰克·多西领导的 Block 宣布将削减约一成的人力成本。此举反映了硅谷正从盲目扩张转向精细化运营，旨在优化组织结构。</div>
-                        </div>
-                    </div>
-                
-                    <div class="article-card">
-                        <div class="article-body">
-                            <div class="card-blog">MSN Economy</div>
-                            <h3 class="card-title"><a href="https://www.msn.com/en-in/money/economy/layoff-news-jack-dorsey-s-block-plans-10-job-cuts-during-performance-reviews-amid-business-overhaul/ar-AA1VTMnZ" target="_blank">美国就业与通胀数据“双重暴击”即将来袭</a></h3>
-                            <div class="card-summary">市场正屏息以待即将发布的就业与通胀报告。投资者担心超预期的通胀压力将迫使货币政策进一步收紧。</div>
-                        </div>
-                    </div>
+            <div class="news-item">
+                <div class="news-title">2. 美国就业与通胀数据双重冲击</div>
+                <div class="news-source">彭博社 · Bloomberg Markets</div>
+                <div class="news-summary">
+                    市场即将迎来美国就业与通胀数据的双重考验。经济学家预期数据将显示劳动力市场韧性，但通胀压力仍存。美联储政策走向成为市场焦点，投资者需密切关注本周经济数据公布。
                 </div>
+                <a href="https://www.bloomberg.com/news/articles/2026-02-07/get-ready-for-double-whammy-of-us-jobs-and-inflation" class="news-link" target="_blank">阅读原文 →</a>
+            </div>
 
-                <div class="category-section">
-                    <h2>【地缘政治】</h2>
-                    
-                    <div class="article-card">
-                        <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&q=80&w=1000" alt="Geopolitics">
-                        <div class="article-body">
-                            <div class="card-blog">Baidu Search / WSJ</div>
-                            <h3 class="card-title"><a href="https://www.baidu.com/s?wd=US+Navy+Australia+base+insurance+policy+war+with+China+Feb+2026" target="_blank">美国海军在澳大利亚建立基地，作为对华军事威慑的“保险政策”</a></h3>
-                            <div class="card-summary">美军正稳步推进在澳洲的战略节点建设，旨在确保在潜在的印太冲突中拥有持久的后勤补给与修整能力。</div>
-                        </div>
-                    </div>
-                
-                    <div class="article-card">
-                        <div class="article-body">
-                            <div class="card-blog">Reuters World</div>
-                            <h3 class="card-title"><a href="https://www.reuters.com/world/us-military-seeking-strategic-advantages-builds-up-australias-northern-bases-2024-07-26/" target="_blank">受美中博弈挤压，世界“中间力量”加速抱团取暖</a></h3>
-                            <div class="card-summary">在两个大国日益明显的两极化竞争中，许多中等规模国家正寻求建立独立的伙伴关系网，以维护其中立立场。</div>
-                        </div>
-                    </div>
+            <div class="news-item">
+                <div class="news-title">3. 债务问题持续推高黄金市场</div>
+                <div class="news-source">彭博社 · Bloomberg Markets</div>
+                <div class="news-summary">
+                    全球债务水平持续攀升，各国央行持续购金以分散风险。分析师指出，债务问题正在成为推动黄金价格上涨的核心动力。在地缘政治不确定性和通胀预期下，黄金作为避险资产的需求持续旺盛。
                 </div>
-                    
-            </section>
-        </article>
-    </main>
+                <a href="https://www.bloomberg.com/news/videos/2026-02-07/how-the-debt-problem-is-fueling-the-gold-market-video" class="news-link" target="_blank">阅读原文 →</a>
+            </div>
+        </div>
 
-    <script src="../../../../assets/js/sidebar.js"></script>
+        <div class="section">
+            <h2>📈 其他重要动态</h2>
+            
+            <div class="news-item">
+                <div class="news-title">美国考虑对台军售</div>
+                <div class="news-source">金融时报 / 彭博社</div>
+                <div class="news-summary">
+                    据报道，美国政府正在考虑在新一轮对台军售计划，可能在特朗普与习近平峰会前推进。此举可能进一步加剧中美关系的紧张态势。
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title">中国央行持续购金</div>
+                <div class="news-source">彭博社</div>
+                <div class="news-summary">
+                    尽管金价近期有所回调，中国央行仍继续增持黄金储备。分析师认为，这反映了中国对美元资产风险敞口的调整，以及对多元化储备的持续需求。
+                </div>
+            </div>
+
+            <div class="news-item">
+                <div class="news-title">科技企业AI投资引发债市担忧</div>
+                <div class="news-source">彭博社</div>
+                <div class="news-summary">
+                    亚马逊、谷歌、微软、Meta等科技巨头的大规模AI投资引发债券市场关注。信贷分析师警告，这种资本支出狂热可能带来潜在的信用风险。
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>报告生成时间：<span class="timestamp">2026年2月8日 16:30 (Asia/Shanghai)</span></p>
+            <p>数据来源：WSJ、Bloomberg、FT、经济学人等</p>
+            <p>📧 本报告由 Liam 自动生成</p>
+        </div>
+    </div>
 </body>
 </html>
