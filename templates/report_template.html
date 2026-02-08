@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../../../../assets/css/main.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="high-density">
     <aside id="sidebar">
         <h2>Daily Insights</h2>
         <nav id="sidebar-nav">
@@ -32,9 +32,11 @@
                                     {% if article.image %}
                                     <img src="{{ article.image }}" alt="{{ article.title }}" onerror="this.style.display='none'">
                                     {% endif %}
-                                    <div class="card-blog">{{ article.source }}</div>
-                                    <h3 class="card-title"><a href="{{ article.url }}">{{ article.title }}</a></h3>
-                                    <div class="card-summary">{{ article.summary }}</div>
+                                    <div class="article-body">
+                                        <div class="card-blog">{{ article.source }}</div>
+                                        <h3 class="card-title"><a href="{{ article.url }}">{{ article.title }}</a></h3>
+                                        <div class="card-summary">{{ article.summary }}</div>
+                                    </div>
                                 </div>
                             {% endfor %}
                         </div>
