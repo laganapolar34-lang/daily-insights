@@ -1,0 +1,49 @@
+{
+    "date": "2026-02-08",
+    "title": "Global Insights Daily",
+    "sections": [
+        {
+            "category": "Technology & AI",
+            "articles": [
+                {
+                    "title": "Dorsey’s Block Cutting Up to 10% of Staff in Efficiency Push",
+                    "url": "https://www.bloomberg.com/...",
+                    "source": "Bloomberg Markets",
+                    "image": "https://www.bloomberg.com/...",
+                    "summary": "Jack Dorsey领导的Block公司计划在年度绩效评估期间裁员多达10%..."
+                },
+                {
+                    "title": "Tech’s AI Push Risks a Bond Market Blowback",
+                    "url": "https://www.bloomberg.com/...",
+                    "source": "Bloomberg Markets",
+                    "image": "",
+                    "summary": "科技巨头在人工智能领域的投入远超预期，引发了债市担忧..."
+                }
+            ]
+        },
+        {
+            "category": "Geopolitics",
+            "articles": [
+                {
+                    "title": "The U.S. Navy’s New Insurance Policy for War With China Is an Australian Base",
+                    "url": "https://www.wsj.com/...",
+                    "source": "WSJ World",
+                    "image": "https://images.wsj.net/...",
+                    "summary": "美国计划在西澳大利亚部署多达四艘核动力潜艇..."
+                }
+            ]
+        },
+        {
+            "category": "Global Economy",
+            "articles": [
+                {
+                    "title": "Big Tech’s AI Spending vs. Historic CapEx",
+                    "url": "https://www.wsj.com/...",
+                    "source": "WSJ Economy",
+                    "image": "https://images.wsj.net/...",
+                    "summary": "四大科技巨头在2026年的预计资本支出占美国GDP的2.1%..."
+                }
+            ]
+        }
+    ]
+}

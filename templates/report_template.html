@@ -23,7 +23,25 @@
             <div class="report-date">{{date}}</div>
             <h1>{{title}}</h1>
             <section class="content">
-                {{content}}
+                {% if sections %}
+                    {% for section in sections %}
+                        <div class="category-section">
+                            <h2>{{ section.category }}</h2>
+                            {% for article in section.articles %}
+                                <div class="article-card">
+                                    {% if article.image %}
+                                    <img src="{{ article.image }}" alt="{{ article.title }}" onerror="this.style.display='none'">
+                                    {% endif %}
+                                    <div class="card-blog">{{ article.source }}</div>
+                                    <h3 class="card-title"><a href="{{ article.url }}">{{ article.title }}</a></h3>
+                                    <div class="card-summary">{{ article.summary }}</div>
+                                </div>
+                            {% endfor %}
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    {{content}}
+                {% endif %}
             </section>
         </article>
     </main>
