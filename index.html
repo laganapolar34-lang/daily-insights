@@ -3,19 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daily Insights</title>
-    <style>
-        body { font-family: sans-serif; max-width: 800px; margin: 0 auto; padding: 2rem; line-height: 1.6; }
-        header { border-bottom: 1px solid #ccc; margin-bottom: 2rem; }
-    </style>
+    <title>Daily Insights - Dashboard</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>Daily Insights</h1>
-        <p>A collection of thoughts and learnings.</p>
+<body style="display: block;"> <!-- Overriding body flex for dashboard -->
+    <header style="padding: 4rem 10%; background: #fff; border-bottom: 1px solid var(--border-color);">
+        <h1 style="margin-bottom: 0.5rem;">Daily Insights</h1>
+        <p style="font-size: 1.2rem; color: #666;">A modern collection of thoughts, learnings, and reports.</p>
     </header>
-    <main>
-        <p>Welcome! This site is live.</p>
+
+    <main style="max-width: 1200px; margin: 0 auto; padding: 4rem 10%;">
+        <div class="dashboard-grid" id="dashboard-grid">
+            <!-- Dynamically populated or statically listed -->
+            <div class="card">
+                <div class="report-date">2026-02-08</div>
+                <h3 style="font-family: var(--font-serif); font-size: 1.5rem; margin: 0.5rem 0 1rem 0;">
+                    <a href="reports/2026/02/08/index.html" style="color: inherit; text-decoration: none;">Global Insights Daily</a>
+                </h3>
+                <p style="color: #666; font-size: 0.9rem;">Deep analysis of international political and economic trends, featuring insights from The Economist, WSJ, and Bloomberg.</p>
+                <a href="reports/2026/02/08/index.html" style="color: var(--accent-color); font-weight: 600; text-decoration: none; font-size: 0.8rem; text-transform: uppercase;">Read More →</a>
+            </div>
+
+        </div>
     </main>
+
+    <footer style="padding: 2rem 10%; text-align: center; color: #999; font-size: 0.8rem; border-top: 1px solid var(--border-color);">
+        &copy; 2026 Daily Insights. Built with OpenClaw.
+    </footer>
 </body>
 </html>
